@@ -136,13 +136,26 @@ class KeynoteBuilder:
         from pptx.enum.text import PP_ALIGN
 
         scale = 914400 / 96  # px → EMU conversion
+        # Canvas bounds for clipping
+        canvas = manifest.get("canvas", {})
+        canvas_w = canvas.get("width", 1920)
+        canvas_h = canvas.get("height", 1080)
 
         for el in elements:
             el_type = el.get("type", "")
-            x = int(el.get("x", 0) * scale)
-            y = int(el.get("y", 0) * scale)
-            w = int(el.get("width", 100) * scale)
-            h = int(el.get("height", 100) * scale)
+            # Clamp positions and sizes to canvas bounds — Keynote rejects
+            # PPTX files with elements positioned far outside the slide.
+            raw_x = el.get("x", 0)
+            raw_y = el.get("y", 0)
+            raw_w = el.get("width", 100)
+            raw_h = el.get("height", 100)
+
+            # Keynote rejects elements with negative positions or extreme sizes.
+            # Clip strictly: positions >= 0, sizes <= canvas size.
+            x = int(max(raw_x, 0) * scale)
+            y = int(max(raw_y, 0) * scale)
+            w = int(min(max(raw_w, 1), canvas_w) * scale)
+            h = int(min(max(raw_h, 1), canvas_h) * scale)
 
             if el_type == "TEXT" and el.get("text_data"):
                 self._add_text_box(slide, el, x, y, w, h)
@@ -240,7 +253,11 @@ class KeynoteBuilder:
                 font = run.font
                 font.name = run_style.get("fontFamily", style.get("fontFamily", "Helvetica"))
                 raw_size = run_style.get("fontSize", style.get("fontSize", 16))
-                font.size = Pt(max(raw_size, 1))  # min 1pt (pptx requires >= ~0.8pt)
+                # Clamp to reasonable bounds: 6pt min, 400pt max
+                # Some Figma containers have fontSize=0 → fallback to 16
+                # Some titles can be 220pt+ → cap to 400 to avoid renderer issues
+                clamped_size = max(6, min(int(raw_size or 16), 400))
+                font.size = Pt(clamped_size)
                 font.bold = run_style.get("fontWeight", style.get("fontWeight", 400)) >= 700
                 font.italic = run_style.get("italic", style.get("italic", False))
 

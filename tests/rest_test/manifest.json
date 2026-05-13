@@ -1,0 +1,198 @@
+{
+  "version": "1.0.0",
+  "tool": "figma2keynote_claude",
+  "source": {
+    "file_key": "PSayE0KkSPlY6VxOuGc4Wt",
+    "file_name": "figmatokeynote_test_0513 (10:46 AM)_design file",
+    "extracted_at": "2026-05-13T15:59:05.942471+00:00"
+  },
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "slides": [
+    {
+      "index": 0,
+      "id": "1:74",
+      "name": "Frame",
+      "width": 1920.0,
+      "height": 1080.0,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "elements": [
+        {
+          "id": "1:75",
+          "name": " Project Rufus",
+          "type": "TEXT",
+          "x": -43.000003814697266,
+          "y": 408.0,
+          "width": 2006.4000244140625,
+          "height": 264.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": " Project Rufus",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontPostScriptName": "SFPro-Regular",
+              "fontSize": 220.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -2.2,
+              "lineHeightPx": 264.0,
+              "lineHeightPercent": 100.55647277832031,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [
+              10,
+              10,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9,
+              9
+            ],
+            "styleOverrideTable": {
+              "10": {
+                "fontFamily": "SF Pro",
+                "fontSize": 220.0,
+                "fontWeight": 700,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "opacity": 1.0,
+                    "color": {
+                      "r": 0.0,
+                      "g": 0.0,
+                      "b": 0.0,
+                      "a": 1.0
+                    }
+                  }
+                ],
+                "letterSpacing": -2.2
+              },
+              "9": {
+                "fontSize": 220.0
+              }
+            }
+          }
+        },
+        {
+          "id": "1:76",
+          "name": "Base",
+          "type": "TEXT",
+          "x": 924.0,
+          "y": 990.0,
+          "width": 81.0,
+          "height": 48.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Base",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontPostScriptName": "SFPro-Regular",
+              "fontSize": 40.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.8,
+              "lineHeightPx": 48.0,
+              "lineHeightPercent": 100.55647277832031,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:77",
+          "name": "May 13, 2026",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 48.0,
+          "width": 1920.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "May 13, 2026",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontPostScriptName": "SFPro-Regular",
+              "fontSize": 30.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.6,
+              "lineHeightPx": 36.0,
+              "lineHeightPercent": 100.55647277832031,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0.0,
+                  "g": 0.0,
+                  "b": 0.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ],
+      "poster_image": "assets/slide_000_poster.png"
+    }
+  ]
+}
