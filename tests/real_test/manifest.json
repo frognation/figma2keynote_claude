@@ -1,0 +1,737 @@
+{
+  "version": "1.0.0",
+  "tool": "figma2keynote_claude",
+  "source": {
+    "file_key": "PSayE0KkSPlY6VxOuGc4Wt",
+    "file_name": "figmatokeynote_test_0513",
+    "extracted_at": "2026-05-13T10:56:00+00:00"
+  },
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "slides": [
+    {
+      "index": 0,
+      "id": "1:74",
+      "name": "Title — Project Rufus",
+      "width": 1920,
+      "height": 1080,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      },
+      "poster_image": "assets/slide_000_poster.png",
+      "elements": [
+        {
+          "id": "1:74",
+          "name": "Frame",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1920.0,
+          "height": 1080.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "\\uF8FF\nProject Rufus\nBase\nMay 13, 2026",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 0,
+              "fontWeight": 700,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -2.2,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:75",
+          "name": " Project Rufus",
+          "type": "TEXT",
+          "x": -43.000003814697266,
+          "y": 408.0,
+          "width": 2006.4000244140625,
+          "height": 264.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "\\uF8FF\nProject Rufus\nBase\nMay 13, 2026",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 0,
+              "fontWeight": 700,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -2.2,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:76",
+          "name": "Base",
+          "type": "TEXT",
+          "x": 924.0,
+          "y": 990.0,
+          "width": 81.0,
+          "height": 48.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Base\nMay 13, 2026",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 220,
+              "fontWeight": 700,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.8,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:77",
+          "name": "May 13, 2026",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 48.0,
+          "width": 1920.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "May 13, 2026",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 220,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.8,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "1:78",
+      "name": "Intro Letter",
+      "width": 1920,
+      "height": 1080,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      },
+      "poster_image": "assets/slide_001_poster.png",
+      "elements": [
+        {
+          "id": "1:78",
+          "name": "Frame",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1920.0,
+          "height": 1080.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Hi Team\nThank you for considering us for the\nFive days of\nopportunity to collaborate on Project Rufus.\nApproach over fidelity.",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 60,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.6,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:79",
+          "name": "Hi Team   Thank you for considering us for the opportunity to collaborate on Project Rufus. Five days of  exploration, synthesis, and learning. Approach over fidelity.",
+          "type": "TEXT",
+          "x": -2152.0,
+          "y": 249.0,
+          "width": 1904.0,
+          "height": 540.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Hi Team\nThank you for considering us for the\nFive days of\nopportunity to collaborate on Project Rufus.\nApproach over fidelity.",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 60,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": -0.6,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "1:80",
+      "name": "Challenge & Ambition",
+      "width": 1920,
+      "height": 1080,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "poster_image": "assets/slide_002_poster.png",
+      "elements": [
+        {
+          "id": "1:80",
+          "name": "Frame",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1920.0,
+          "height": 1080.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "CHALLENGE & AMBITION\nChallenge\nAGC is often perceived as being limited\n          to Apple products alone.\nSuccess\nShift the perception of AGC from too\n          niche to everyday appeal.",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:81",
+          "name": "Challenge AGC is often perceived as being limited to Apple products alone.  Success Shift the perception of AGC from too niche to everyday appeal.",
+          "type": "TEXT",
+          "x": -4272.0,
+          "y": 232.0,
+          "width": 1824.0,
+          "height": 582.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "CHALLENGE & AMBITION\nChallenge\nAGC is often perceived as being limited\n          to Apple products alone.\nSuccess\nShift the perception of AGC from too\n          niche to everyday appeal.",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:82",
+          "name": "CHALLENGE &amp; AMBITION",
+          "type": "TEXT",
+          "x": -4320.0,
+          "y": 48.0,
+          "width": 1920.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "CHALLENGE & AMBITION",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 90,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "1:470",
+      "name": "Geometry of Magic (Video)",
+      "width": 1920,
+      "height": 1080,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "poster_image": "assets/slide_003_poster.png",
+      "elements": [
+        {
+          "id": "1:470",
+          "name": "Frame",
+          "type": "TEXT",
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1920.0,
+          "height": 1080.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "GEOMETRY OF MAGIC\nSystemic & mathematical cards creating magical patterns.\nAll elements sharing uniform card sizes",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 30,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:471",
+          "name": "GEOMETRY OF MAGIC",
+          "type": "TEXT",
+          "x": -1348.5,
+          "y": -7992.0,
+          "width": 297.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "GEOMETRY OF MAGIC\nSystemic & mathematical cards creating magical patterns.\nAll elements sharing uniform card sizes",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 30,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:472",
+          "name": "Grizzly Bear - gun-shy [Official Music Video] - Grizzly Bear (720p, h264) 1",
+          "type": "TEXT",
+          "x": -2112.0,
+          "y": -7873.0,
+          "width": 932.0,
+          "height": 523.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Systemic & mathematical cards creating magical patterns.\nAll elements sharing uniform card sizes",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontSize": 30,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:473",
+          "name": "684630ac-848d-446c-a8e8-d02688152332 1",
+          "type": "TEXT",
+          "x": -1149.0,
+          "y": -7873.0,
+          "width": 423.0,
+          "height": 674.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Systemic & mathematical cards creating magical patterns.\nAll elements sharing uniform card sizes\nInspired by Cardistry, but not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontSize": 45,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:474",
+          "name": "Systemic &amp; mathematical cards  creating magical patterns.",
+          "type": "TEXT",
+          "x": -2128.0,
+          "y": -7321.0,
+          "width": 900.0,
+          "height": 90.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Systemic & mathematical cards creating magical patterns.\nAll elements sharing uniform card sizes\nInspired by Cardistry, but not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontSize": 45,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:475",
+          "name": "All elements sharing uniform card sizes",
+          "type": "TEXT",
+          "x": -1167.0,
+          "y": -7152.0,
+          "width": 445.0,
+          "height": 135.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "All elements sharing uniform card sizes\nInspired by Cardistry, but not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontSize": 45,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:476",
+          "name": "original_fb505271f65edbc901e4178bd3dc50ef 5",
+          "type": "TEXT",
+          "x": -674.0,
+          "y": -7873.0,
+          "width": 375.0,
+          "height": 666.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Inspired by Cardistry, but not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontSize": 45,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:477",
+          "name": "Inspired by Cardistry, but  not mimicking",
+          "type": "TEXT",
+          "x": -709.0,
+          "y": -7152.0,
+          "width": 445.0,
+          "height": 135.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Inspired by Cardistry, but not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontSize": 45,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0,
+              "textDecoration": "NONE"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0,
+                  "a": 1
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ]
+    }
+  ]
+}

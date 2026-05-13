@@ -384,14 +384,48 @@ class KeynoteBuilder:
 
     # ── PPTX → .key conversion via AppleScript ──────────────────
 
+    # ── Keynote app targeting ────────────────────────────────────
+    # On systems with multiple Keynote versions installed, we pin to the
+    # specific newer version by bundle ID. The two known bundle IDs:
+    #   com.apple.iWork.Keynote → Keynote v14.x (older, original name)
+    #   com.apple.Keynote       → Keynote v15.x ("Keynote Creator Studio")
+    # We prefer the newer version.
+    KEYNOTE_BUNDLE_ID_NEW = "com.apple.Keynote"           # v15+
+    KEYNOTE_BUNDLE_ID_OLD = "com.apple.iWork.Keynote"     # v14.x
+
+    @classmethod
+    def detect_best_keynote(cls) -> str:
+        """Find the best (newest) installed Keynote and return its bundle ID."""
+        import subprocess
+        # Try newer first, fall back to older
+        for bundle_id in (cls.KEYNOTE_BUNDLE_ID_NEW, cls.KEYNOTE_BUNDLE_ID_OLD):
+            try:
+                result = subprocess.run(
+                    ["osascript", "-e",
+                     f'tell application id "{bundle_id}" to version'],
+                    capture_output=True, text=True, timeout=5,
+                )
+                if result.returncode == 0 and result.stdout.strip():
+                    return bundle_id
+            except (subprocess.TimeoutExpired, FileNotFoundError):
+                continue
+        return cls.KEYNOTE_BUNDLE_ID_NEW  # default
+
     def _convert_pptx_to_key(self, pptx_path: Path, key_path: Path) -> Optional[Path]:
-        """Attempt to convert .pptx to .key using Keynote via AppleScript."""
+        """
+        Convert .pptx to .key using Keynote via AppleScript.
+        Pins to the specific Keynote bundle ID to avoid version conflicts.
+        """
         import subprocess
 
+        bundle_id = self.detect_best_keynote()
+
         script = f'''
-        tell application "Keynote"
+        tell application id "{bundle_id}"
+            activate
+            delay 1
             open POSIX file "{pptx_path}"
-            delay 3
+            delay 5
             set theDoc to front document
             save theDoc in POSIX file "{key_path}"
             delay 2
@@ -402,12 +436,14 @@ class KeynoteBuilder:
         try:
             result = subprocess.run(
                 ["osascript", "-e", script],
-                capture_output=True, text=True, timeout=30
+                capture_output=True, text=True, timeout=60,
             )
             if result.returncode == 0 and key_path.exists():
                 return key_path
-        except (subprocess.TimeoutExpired, FileNotFoundError):
-            pass
+            elif result.stderr:
+                print(f"  [AppleScript] {result.stderr.strip()}")
+        except (subprocess.TimeoutExpired, FileNotFoundError) as e:
+            print(f"  [AppleScript] {e}")
 
         return None
 

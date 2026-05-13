@@ -22,14 +22,63 @@ class FigmaClient:
     BASE_URL = "https://api.figma.com/v1"
 
     def __init__(self, token: Optional[str] = None):
-        self.token = token or os.environ.get("FIGMA_ACCESS_TOKEN", "")
+        self.token = (
+            token
+            or os.environ.get("FIGMA_ACCESS_TOKEN", "")
+            or self._read_token_from_config()
+        )
         if not self.token:
             raise ValueError(
                 "Figma access token required. "
-                "Set FIGMA_ACCESS_TOKEN env var or pass token= argument."
+                "Set FIGMA_ACCESS_TOKEN env var, pass token= argument, "
+                "or save to ~/.figma2keynote/config."
             )
         self.session = requests.Session()
         self.session.headers.update({"X-Figma-Token": self.token})
+
+    @staticmethod
+    def _read_token_from_config() -> str:
+        """Read token from ~/.figma2keynote/config if present."""
+        config_path = Path.home() / ".figma2keynote" / "config"
+        if config_path.exists():
+            try:
+                content = config_path.read_text().strip()
+                # Support FIGMA_ACCESS_TOKEN=xxx or just raw token
+                for line in content.splitlines():
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if "=" in line:
+                        key, val = line.split("=", 1)
+                        if key.strip() == "FIGMA_ACCESS_TOKEN":
+                            return val.strip().strip('"\'')
+                    elif line.startswith("figd_"):
+                        return line
+            except Exception:
+                pass
+        return ""
+
+    @staticmethod
+    def save_token(token: str) -> Path:
+        """Save token to ~/.figma2keynote/config (chmod 600)."""
+        import stat
+        config_dir = Path.home() / ".figma2keynote"
+        config_dir.mkdir(exist_ok=True, mode=0o700)
+        config_path = config_dir / "config"
+        config_path.write_text(f"FIGMA_ACCESS_TOKEN={token}\n")
+        config_path.chmod(stat.S_IRUSR | stat.S_IWUSR)  # 600
+        return config_path
+
+    @classmethod
+    def verify_token(cls, token: str) -> dict:
+        """Verify a token by calling /me endpoint. Returns user info or raises."""
+        resp = requests.get(
+            f"{cls.BASE_URL}/me",
+            headers={"X-Figma-Token": token},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        return resp.json()
 
     # ── File & Node Tree ──────────────────────────────────────────
 
