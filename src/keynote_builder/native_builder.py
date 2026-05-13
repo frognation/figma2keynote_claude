@@ -201,8 +201,10 @@ class NativeKeynoteBuilder:
         is_first: bool,
     ) -> bool:
         """Build a single slide with all its elements."""
+        idx_1based = index + 1
+
         # First slide already exists from document creation
-        # Subsequent slides need to be added
+        # Subsequent slides need to be added with Blank layout
         if not is_first:
             add_script = f'''
             tell application id "{self.bundle_id}"
@@ -214,25 +216,54 @@ class NativeKeynoteBuilder:
             '''
             self._run_script(add_script, timeout=15)
 
-        # Hide default placeholders
-        idx_1based = index + 1
-        cleanup_script = f'''
+        # Set the slide to use the Blank layout + hide all default placeholders
+        blank_layout_script = f'''
         tell application id "{self.bundle_id}"
-            tell slide {idx_1based} of front document
+            tell front document
                 try
-                    set title showing to false
-                    set body showing to false
+                    set base slide of slide {idx_1based} to slide layout "Blank"
                 end try
+                tell slide {idx_1based}
+                    try
+                        set title showing to false
+                    end try
+                    try
+                        set body showing to false
+                    end try
+                end tell
             end tell
             return "OK"
         end tell
         '''
-        self._run_script(cleanup_script, timeout=10)
+        self._run_script(blank_layout_script, timeout=10)
 
         # Add elements
         elements = slide_data.get("elements", [])
         for el in elements:
             self._add_element(el, idx_1based, staging_dir)
+
+        # Cleanup: remove any empty text items that may have been left from placeholders
+        cleanup_script = f'''
+        tell application id "{self.bundle_id}"
+            tell slide {idx_1based} of front document
+                set toDelete to {{}}
+                repeat with t in text items
+                    try
+                        if (object text of t as text) is "" then
+                            set end of toDelete to t
+                        end if
+                    end try
+                end repeat
+                repeat with t in toDelete
+                    try
+                        delete t
+                    end try
+                end repeat
+            end tell
+            return "OK"
+        end tell
+        '''
+        self._run_script(cleanup_script, timeout=10)
 
         return True
 
@@ -312,7 +343,7 @@ class NativeKeynoteBuilder:
         return ok
 
     def _add_image(self, el: dict, slide_num: int, image_path: Path) -> bool:
-        """Add an image element."""
+        """Add an image element. Use 'file' property (POSIX file alias)."""
         x = max(0, int(el.get("x", 0)))
         y = max(0, int(el.get("y", 0)))
         w = max(20, int(el.get("width", 200)))
@@ -321,16 +352,20 @@ class NativeKeynoteBuilder:
         script = f'''
         tell application id "{self.bundle_id}"
             tell slide {slide_num} of front document
-                set newImg to make new image with properties {{file name:"{image_path}", position:{{{x}, {y}}}, width:{w}, height:{h}}}
+                set imgFile to (POSIX file "{image_path}")
+                set newImg to make new image with properties {{file:imgFile, position:{{{x}, {y}}}, width:{w}, height:{h}}}
             end tell
             return "OK"
         end tell
         '''
-        ok, _ = self._run_script(script, timeout=15)
+        ok, err = self._run_script(script, timeout=15)
+        if not ok:
+            print(f"  [image] {err}")
         return ok
 
     def _add_movie(self, el: dict, slide_num: int, video_path: Path) -> bool:
-        """Add a movie (video) element — NATIVE Keynote video embedding."""
+        """Add a movie (video) element — NATIVE Keynote video embedding.
+        Uses POSIX file alias for the path (file name property requires it)."""
         x = max(0, int(el.get("x", 0)))
         y = max(0, int(el.get("y", 0)))
         w = max(20, int(el.get("width", 400)))
@@ -339,12 +374,15 @@ class NativeKeynoteBuilder:
         script = f'''
         tell application id "{self.bundle_id}"
             tell slide {slide_num} of front document
-                set newMovie to make new movie with properties {{file name:"{video_path}", position:{{{x}, {y}}}, width:{w}, height:{h}}}
+                set vidFile to (POSIX file "{video_path}")
+                set newMovie to make new movie with properties {{file name:vidFile, position:{{{x}, {y}}}, width:{w}, height:{h}}}
             end tell
             return "OK"
         end tell
         '''
-        ok, err = self._run_script(script, timeout=30)
+        ok, err = self._run_script(script, timeout=60)
+        if not ok:
+            print(f"  [movie] {err}")
         return ok
 
     def _save_document(self, sandbox_path: Path) -> bool:

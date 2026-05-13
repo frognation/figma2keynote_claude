@@ -1,0 +1,295 @@
+{
+  "version": "1.0.0",
+  "tool": "figma2keynote_claude",
+  "source": {
+    "file_key": "PSayE0KkSPlY6VxOuGc4Wt",
+    "file_name": "figmatokeynote_test_0513 (10:46 AM)_design file",
+    "extracted_at": "2026-05-13T16:16:55.156999+00:00"
+  },
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "slides": [
+    {
+      "index": 0,
+      "id": "1:470",
+      "name": "Frame",
+      "width": 1920.0,
+      "height": 1080.0,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "elements": [
+        {
+          "id": "1:471",
+          "name": "GEOMETRY OF MAGIC",
+          "type": "TEXT",
+          "x": 811.5,
+          "y": 48.0,
+          "width": 297.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "GEOMETRY OF MAGIC ",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontPostScriptName": "SFPro-Regular",
+              "fontSize": 30.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0.0,
+              "lineHeightPx": 36.0,
+              "lineHeightPercent": 100.55647277832031,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:472",
+          "name": "Grizzly Bear - gun-shy [Official Music Video] - Grizzly Bear (720p, h264) 1",
+          "type": "RECTANGLE",
+          "x": 48.0,
+          "y": 167.0,
+          "width": 932.0,
+          "height": 523.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "shape_data": {
+            "fills": [
+              {
+                "type": "IMAGE",
+                "opacity": 1.0,
+                "imageRef": "0320a784879bf538b03c589587946b13d3f5126e",
+                "scaleMode": "STRETCH"
+              }
+            ],
+            "strokes": [],
+            "strokeWeight": 1.0433012247085571,
+            "cornerRadius": 0,
+            "rectangleCornerRadii": null
+          },
+          "media_data": {
+            "type": "video",
+            "ref": "1:472",
+            "local_path": "assets/grizzly_bear_video.mp4",
+            "detected_by": "name_pattern"
+          }
+        },
+        {
+          "id": "1:473",
+          "name": "684630ac-848d-446c-a8e8-d02688152332 1",
+          "type": "RECTANGLE",
+          "x": 1011.0,
+          "y": 167.0,
+          "width": 423.0,
+          "height": 674.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "shape_data": {
+            "fills": [
+              {
+                "type": "IMAGE",
+                "opacity": 1.0,
+                "imageRef": "facae9531e9a49bd833e7cd72d7a78c392986cfe",
+                "scaleMode": "STRETCH"
+              }
+            ],
+            "strokes": [],
+            "strokeWeight": 1.0,
+            "cornerRadius": 0,
+            "rectangleCornerRadii": null
+          },
+          "media_data": {
+            "type": "image",
+            "ref": "facae9531e9a49bd833e7cd72d7a78c392986cfe",
+            "local_path": "assets/slide_000_img_002.png",
+            "scale_mode": "STRETCH"
+          }
+        },
+        {
+          "id": "1:474",
+          "name": "Systemic & mathematical cards  creating magical patterns.",
+          "type": "TEXT",
+          "x": 32.0,
+          "y": 719.0,
+          "width": 900.0,
+          "height": 90.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Systemic & mathematical cards  creating magical patterns.",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontPostScriptName": "BaseGrotesk-Regular",
+              "fontSize": 45.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0.0,
+              "lineHeightPx": 45.0,
+              "lineHeightPercent": 71.42857360839844,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:475",
+          "name": "All elements sharing uniform card sizes",
+          "type": "TEXT",
+          "x": 993.0,
+          "y": 888.0,
+          "width": 445.0,
+          "height": 135.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "All elements sharing uniform card sizes ",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontPostScriptName": "BaseGrotesk-Regular",
+              "fontSize": 45.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0.0,
+              "lineHeightPx": 45.0,
+              "lineHeightPercent": 71.42857360839844,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        },
+        {
+          "id": "1:476",
+          "name": "original_fb505271f65edbc901e4178bd3dc50ef 5",
+          "type": "RECTANGLE",
+          "x": 1486.0,
+          "y": 167.0,
+          "width": 375.0,
+          "height": 666.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "shape_data": {
+            "fills": [
+              {
+                "type": "IMAGE",
+                "opacity": 1.0,
+                "imageRef": "650164017206ee20fc1880f3a813ce7c37ac70fb",
+                "scaleMode": "STRETCH"
+              }
+            ],
+            "strokes": [],
+            "strokeWeight": 1.3906300067901611,
+            "cornerRadius": 0,
+            "rectangleCornerRadii": null
+          },
+          "media_data": {
+            "type": "image",
+            "ref": "650164017206ee20fc1880f3a813ce7c37ac70fb",
+            "local_path": "assets/slide_000_img_005.png",
+            "scale_mode": "STRETCH"
+          }
+        },
+        {
+          "id": "1:477",
+          "name": "Inspired by Cardistry, but  not mimicking",
+          "type": "TEXT",
+          "x": 1451.0,
+          "y": 888.0,
+          "width": 445.0,
+          "height": 135.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "Inspired by Cardistry, but  not mimicking",
+            "style": {
+              "fontFamily": "BaseGrotesk",
+              "fontPostScriptName": "BaseGrotesk-Regular",
+              "fontSize": 45.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0.0,
+              "lineHeightPx": 45.0,
+              "lineHeightPercent": 71.42857360839844,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ],
+      "poster_image": "assets/slide_000_poster.png"
+    }
+  ]
+}

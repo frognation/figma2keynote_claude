@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "tool": "figma2keynote_claude",
+  "source": {
+    "file_key": "PSayE0KkSPlY6VxOuGc4Wt",
+    "file_name": "figmatokeynote_test_0513 (10:46 AM)_design file",
+    "extracted_at": "2026-05-13T16:15:00.052210+00:00"
+  },
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "slides": [
+    {
+      "index": 0,
+      "id": "1:87",
+      "name": "Frame",
+      "width": 1920.0,
+      "height": 1080.0,
+      "background": {
+        "type": "solid",
+        "color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "elements": [
+        {
+          "id": "1:88",
+          "name": "image 144",
+          "type": "RECTANGLE",
+          "x": 246.0,
+          "y": 171.0,
+          "width": 1427.0,
+          "height": 801.3483276367188,
+          "rotation": 0,
+          "opacity": 1.0,
+          "shape_data": {
+            "fills": [
+              {
+                "type": "IMAGE",
+                "opacity": 1.0,
+                "imageRef": "afb9fe71c9900dbc34571aa868487aee97e3abf7",
+                "scaleMode": "STRETCH"
+              }
+            ],
+            "strokes": [],
+            "strokeWeight": 1.0713213682174683,
+            "cornerRadius": 3.2139639854431152,
+            "rectangleCornerRadii": null
+          },
+          "media_data": {
+            "type": "image",
+            "ref": "afb9fe71c9900dbc34571aa868487aee97e3abf7",
+            "local_path": "assets/slide_000_img_000.png",
+            "scale_mode": "STRETCH"
+          }
+        },
+        {
+          "id": "1:89",
+          "name": "BUILDING ON THE WORK TO DATE",
+          "type": "TEXT",
+          "x": 734.0,
+          "y": 48.0,
+          "width": 453.0,
+          "height": 36.0,
+          "rotation": 0,
+          "opacity": 1.0,
+          "text_data": {
+            "characters": "BUILDING ON THE WORK TO DATE",
+            "style": {
+              "fontFamily": "SF Pro",
+              "fontPostScriptName": "SFPro-Regular",
+              "fontSize": 30.0,
+              "fontWeight": 400,
+              "italic": false,
+              "textAlignHorizontal": "LEFT",
+              "textAlignVertical": "TOP",
+              "letterSpacing": 0.0,
+              "lineHeightPx": 36.0,
+              "lineHeightPercent": 100.55647277832031,
+              "textDecoration": "NONE",
+              "textCase": "ORIGINAL"
+            },
+            "fills": [
+              {
+                "type": "SOLID",
+                "opacity": 1.0,
+                "color": {
+                  "r": 1.0,
+                  "g": 1.0,
+                  "b": 1.0,
+                  "a": 1.0
+                }
+              }
+            ],
+            "characterStyleOverrides": [],
+            "styleOverrideTable": {}
+          }
+        }
+      ],
+      "poster_image": "assets/slide_000_poster.png"
+    }
+  ]
+}
