@@ -239,7 +239,8 @@ class KeynoteBuilder:
                 # Apply font properties
                 font = run.font
                 font.name = run_style.get("fontFamily", style.get("fontFamily", "Helvetica"))
-                font.size = Pt(run_style.get("fontSize", style.get("fontSize", 16)))
+                raw_size = run_style.get("fontSize", style.get("fontSize", 16))
+                font.size = Pt(max(raw_size, 1))  # min 1pt (pptx requires >= ~0.8pt)
                 font.bold = run_style.get("fontWeight", style.get("fontWeight", 400)) >= 700
                 font.italic = run_style.get("italic", style.get("italic", False))
 
