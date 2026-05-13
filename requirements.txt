@@ -1,0 +1,6 @@
+keynote-parser>=1.14.0
+requests>=2.31.0
+Pillow>=10.0.0
+protobuf>=4.25.0
+python-snappy>=0.7.0
+PyYAML>=6.0
